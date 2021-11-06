@@ -9,8 +9,6 @@ fs.mkdir('04-copy-directory/files-copy',{recursive: true}, (err) => {
     }
 })
 
-const newCopyFolderWay = path.join(__dirname, 'files-copy');
-
 fs.readdir(filesFolderWay, {withFileTypes: true}, (err, data) => {
     console.log(data)
     if(err) {
