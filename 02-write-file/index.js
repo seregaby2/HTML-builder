@@ -14,4 +14,8 @@ process.stdin.on('data', (data) => {
     console.log('\ncan add message:')
   }
 })
+process.on('SIGINT', () => {
+  console.log('\nThe end')
+  process.exit()
+})
 
